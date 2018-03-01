@@ -24,7 +24,8 @@ The main files included are:
 
 Files should be run in the order listed above. Also, `INLA-MH-SAC.R`
 has been set with a lower number of iterations to run INLA within MCMC
-than the ones used to produce the results in the paper. See
+than the ones used to produce the results in the paper. See comments in 
+`INLA-MH-SAC.R` for details.
 
 
 References:
