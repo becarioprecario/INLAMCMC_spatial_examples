@@ -1,0 +1,19 @@
+model {
+
+  for(d in 1:D) {
+    for(i in 1:N) {
+      obs[i,d] ~ dpois(mu[i, d])
+      log(mu[i, d]) <- log(exp[i,d]) + alpha[d] + delta[d] * v[i] + spec[d,i]
+    } 
+    spec[d, 1:N] ~ car.normal(adj[], weights[], num[], tau.spec)
+
+    delta[d] ~ dlnorm(0, 0.1)
+
+    alpha[d] ~ dnorm(0, 0.001)
+  }
+
+  v[1:N] ~ car.normal(adj[], weights[], num[], tau.v)
+
+  tau.spec ~ dgamma(0.01, 0.01)
+  tau.v ~ dgamma(0.01, 0.01)
+}
