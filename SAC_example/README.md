@@ -29,4 +29,4 @@ than the ones used to produce the results in the paper. See
 
 References:
 
-Gómez-Rubio and Palmí-Perales (2017). Spatial Models with the Integrated Nested Laplace Approximation within Markov Chain Monte Carlo. (ArXiv paper arXiv:1702.03891)[https://arxiv.org/abs/1702.03891]. 
+Gómez-Rubio and Palmí-Perales (2017). Spatial Models with the Integrated Nested Laplace Approximation within Markov Chain Monte Carlo. [ArXiv paper arXiv:1702.03891](https://arxiv.org/abs/1702.03891). 
